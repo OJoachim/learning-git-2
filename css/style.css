@@ -12,12 +12,13 @@ body {
     font-size: 18px;
     font-weight: 200;
     line-height: 1.5;
+    display: flex;
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 150 50px;
+    padding: 150 25%;
 }
 
 /* song title */
