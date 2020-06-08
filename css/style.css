@@ -13,3 +13,28 @@ body {
     font-weight: 200;
     line-height: 1.5;
 }
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 150 50px;
+}
+
+/* song title */
+
+h1 {
+	font-size: 140%;
+	font-weight: 400;
+}
+
+/* band-album */
+
+h2 {
+	font-size: 90%;
+	font-weight: 150;
+	margin-bottom: 20px;
+}
+
+span {
+	font-style: italic;
+}
