@@ -5,26 +5,26 @@
 }
 
 body {
-    margin: 0;
-    background: #f0fcfc;
-    color: #3d3d3d;
+    	margin: 0;
+    	background: #f0fcfc;
+    	color: #3d3d3d;
 	font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 1.5;
-    display: flex;
+    	font-size: 18px;
+    	font-weight: 200;
+    	line-height: 1.5;
+    	display: flex;
 }
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 150 25%;
+    	max-width: 1140px;
+    	margin: 0 auto;
+    	padding: 150 25%;
 }
 
 /* song title */
 
 h1 {
-	font-size: 140%;
+	font-size: 160%;
 	font-weight: 400;
 }
 
