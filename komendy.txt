@@ -1,0 +1,146 @@
+Komendy dla pakietów: validate i autoprefixer
+
+instalacja i zastosowanie pakietu: html-validate
+
+komenda instalacji:
+$ npm install --save-dev html-validate
+
+komenda użycia i przykład działania:
+$ ./node_modules/.bin/html-validate index.html
+
+index.html
+  14:27   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:72   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:101  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:137  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:189  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:247  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:281  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:309  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  14:330  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  15:55   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  15:92   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  15:126  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  15:177  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  15:215  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  15:245  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:32   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:67   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:109  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:143  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:160  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:199  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:252  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:303  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  16:330  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  17:55   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  17:92   error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  17:126  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  17:177  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  17:215  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+  17:245  error  Expected omitted end tag <br> instead of self-closing element <br/>  void-style
+
+Otl 30 problems (30 errors, 0 warnings)
+
+-----------------------------------------------
+
+
+instalacja i zastosowanie pakietu: autoprefixer-cli
+
+komenda instalacji:
+$ npm install --save-dev autoprefixer-cli
+
+komenda użycia i przykład działania:
+$ ./node_modules/.bin/autoprefixer-cli -o ./css/style.prefixed.css ./css/style.css
+
+
+style.css (przed autoprefixerem)
+/* Global */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f0fcfc;
+  background-image: linear-gradient(#ffffff, #78f1f5, #edf7f7, #dedcf5);
+  color: #3d3d3d;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.5;
+  display: flex;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 150 25%;
+}
+
+/* song title */
+
+h1 {
+	font-size: 160%;
+	font-weight: 400;
+}
+
+/* band-album */
+
+h2 {
+	font-size: 90%;
+	font-weight: 150;
+	margin-bottom: 20px;
+}
+
+span {
+	font-style: italic;
+}
+
+
+style.prefixed.css   (dodany prefiks:  display: -ms-flexbox;)
+
+/* Global */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f0fcfc;
+  background-image: linear-gradient(#ffffff, #78f1f5, #edf7f7, #dedcf5);
+    	color: #3d3d3d;
+	font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.5;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 150 25%;
+}
+
+/* song title */
+
+h1 {
+	font-size: 160%;
+	font-weight: 400;
+}
+
+/* band-album */
+
+h2 {
+	font-size: 90%;
+	font-weight: 150;
+	margin-bottom: 20px;
+}
+
+span {
+	font-style: italic;
+}
